@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/joyeuse
+DEVICE_PATH := device/xiaomi/curtana
 
 # Architecture
 TARGET_ARCH := arm64
@@ -75,7 +75,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 #TARGET_USE_SDCLANG := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := joyeuse
+TARGET_OTA_ASSERT_DEVICE := curtana
 
 # Avb
 BOARD_AVB_ENABLE := true
@@ -90,7 +90,7 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 134217728
 BOARD_SUPER_PARTITION_SIZE := 9126805504
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9126805504
-BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := product vendor system odm
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := product vendor odm
 
 # System as root
 BOARD_ROOT_EXTRA_FOLDERS := bluetooth dsp firmware persist

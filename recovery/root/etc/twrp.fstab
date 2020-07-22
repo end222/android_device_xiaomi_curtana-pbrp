@@ -4,9 +4,9 @@
 
 # mount point  fstype  device                             device2                flags
 
-system		/system			ext4		
-vendor		/vendor			ext4		display="Vendor"
-product		/product		ext4		display="Product"
+system		/system			ext4		logical
+vendor		/vendor			ext4		display="Vendor";logical
+product		/product		ext4		display="Product";logical
 /cache         ext4    /dev/block/bootdevice/by-name/cache
 #/metadata      ext4    /dev/block/bootdevice/by-name/metadata                    flags=display="Metadata";backup=1
 
@@ -35,3 +35,4 @@ product		/product		ext4		display="Product"
 # Removable storage
 /external_sd     auto     /dev/block/mmcblk0p1   /dev/block/mmcblk0   flags=display="external_sd";storage;wipeingui;removable;fsflags="utf8"
 /usb-otg          auto     /dev/block/sdg1    /dev/block/sdg            flags=display="usb-otg";storage;wipeingui;removable;fsflags="utf8"
+

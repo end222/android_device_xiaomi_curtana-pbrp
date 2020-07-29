@@ -26,7 +26,7 @@ $(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
-PRODUCT_COPY_FILES += device/xiaomi/curtana/prebuilt/dtb:dtb.img
+#PRODUCT_COPY_FILES += device/xiaomi/curtana/prebuilt/dtb:dtb.img
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := curtana
